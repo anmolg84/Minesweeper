@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minesweeper-Game using HTML,CSS and Vanilla-JS">
+    <meta name="keywords" content="Minesweeper,Game,HTML,CSS,Vanilla-JS">
+    <meta name="Author" content="Anmol Gupta">
+    <!-- link Tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Minesweeper-Game</title>
+</head>
+<body>
+    <!-- Heading -->
+    <div class="header">
+        Minesweeper
+    </div>
+    <!-- Game -->
+    <div class="content">
+        <div class="row">
+            <select id="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="row-left">
+                <div class="high-score">
+                </div>
+            </div>
+            <div id="minesweeper-grid" class="minesweeper-grid">
+            </div>
+            <div class="play-btn" onclick="setDifficulty()">
+                <div class="inner-btn">
+                    PLAY!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
